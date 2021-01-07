@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documentos",
+  "info": {
+    "name": "documentosingreso"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "fechainicial": {
+      "type": "date",
+      "required": true
+    },
+    "fechafinal": {
+      "type": "date",
+      "required": true
+    },
+    "categoriadto": {
+      "model": "categoriadto"
+    },
+    "periodo": {
+      "model": "periodo",
+      "via": "documentosingresos"
+    },
+    "url": {
+      "type": "string"
+    },
+    "estadodocumento": {
+      "model": "estadodocumento"
+    },
+    "observacion": {
+      "type": "richtext"
+    },
+    "archivos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "soportes": {
+      "type": "json"
+    },
+    "referencia": {
+      "type": "json",
+      "required": true,
+      "unique": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "movimiento": {
+      "type": "json"
+    },
+    "recordar": {
+      "type": "boolean",
+      "default": false
+    },
+    "recordia": {
+      "type": "integer"
+    },
+    "tercero": {
+      "model": "tercero"
+    }
+  }
+}

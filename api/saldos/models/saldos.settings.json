@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saldos",
+  "info": {
+    "name": "saldos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "fecha": {
+      "type": "datetime"
+    },
+    "periodos": {
+      "collection": "periodo",
+      "via": "saldo"
+    },
+    "monto": {
+      "type": "integer"
+    },
+    "fpagos": {
+      "via": "saldo",
+      "collection": "fpagos"
+    }
+  }
+}

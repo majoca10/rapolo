@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/estadodocumentos",
+      "handler": "estadodocumento.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/estadodocumentos/count",
+      "handler": "estadodocumento.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/estadodocumentos/:id",
+      "handler": "estadodocumento.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/estadodocumentos",
+      "handler": "estadodocumento.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/estadodocumentos/:id",
+      "handler": "estadodocumento.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/estadodocumentos/:id",
+      "handler": "estadodocumento.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

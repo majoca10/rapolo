@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documentoegresos",
+  "info": {
+    "name": "Documentoegreso"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "fechainicial": {
+      "type": "datetime"
+    },
+    "fechafinal": {
+      "type": "datetime"
+    },
+    "periodo": {
+      "model": "periodo",
+      "via": "documentoegresos"
+    },
+    "url": {
+      "type": "string"
+    },
+    "estadodocumento": {
+      "model": "estadodocumento"
+    },
+    "observacion": {
+      "type": "richtext"
+    },
+    "archivo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "soporte": {
+      "type": "json"
+    },
+    "referencia": {
+      "type": "json"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "documentoegreso"
+    },
+    "movimiento": {
+      "type": "json"
+    },
+    "recordar": {
+      "type": "boolean",
+      "default": false
+    },
+    "recordia": {
+      "type": "integer"
+    },
+    "tercero": {
+      "model": "tercero"
+    },
+    "categoriadto": {
+      "model": "categoriadto"
+    },
+    "descuento": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empresas",
+  "info": {
+    "name": "empresa"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombreempresa": {
+      "type": "text",
+      "required": true
+    },
+    "direccion": {
+      "type": "text"
+    },
+    "estado": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "telefono": {
+      "type": "biginteger"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "empresas",
+      "dominant": true
+    },
+    "nit": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

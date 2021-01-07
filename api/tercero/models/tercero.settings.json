@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "terceros",
+  "info": {
+    "name": "tercero"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "estado": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "telefono": {
+      "type": "biginteger"
+    },
+    "direccion": {
+      "type": "text"
+    }
+  }
+}

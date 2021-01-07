@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categoriadtos",
+  "info": {
+    "name": "categoriadto"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "estado": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "descripcioncat": {
+      "type": "string",
+      "required": true
+    },
+    "dfpagos": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

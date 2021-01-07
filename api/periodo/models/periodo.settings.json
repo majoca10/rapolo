@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "periodos",
+  "info": {
+    "name": "periodo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "mes": {
+      "type": "enumeration",
+      "enum": [
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre"
+      ],
+      "required": true
+    },
+    "finicial": {
+      "type": "date",
+      "required": true
+    },
+    "ffinal": {
+      "type": "date"
+    },
+    "estado": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "presupuesto": {
+      "type": "biginteger"
+    },
+    "documentoegresos": {
+      "via": "periodo",
+      "collection": "documentoegreso"
+    },
+    "documentosingresos": {
+      "via": "periodo",
+      "collection": "documentos"
+    },
+    "saldo": {
+      "via": "periodos",
+      "model": "saldos"
+    }
+  }
+}

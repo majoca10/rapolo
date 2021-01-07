@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estadodocumentos",
+  "info": {
+    "name": "estadodocumento"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "estado": {
+      "type": "boolean",
+      "default": true
+    },
+    "descripcion": {
+      "type": "string",
+      "required": true
+    },
+    "audita": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

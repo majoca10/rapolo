@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipodocumentos",
+  "info": {
+    "name": "tipodocumento"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "estado": {
+      "type": "boolean"
+    },
+    "nombredocumento": {
+      "type": "string"
+    }
+  }
+}

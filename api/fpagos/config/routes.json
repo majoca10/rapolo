@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fpagos",
+      "handler": "fpagos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fpagos/count",
+      "handler": "fpagos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fpagos/:id",
+      "handler": "fpagos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fpagos",
+      "handler": "fpagos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fpagos/:id",
+      "handler": "fpagos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fpagos/:id",
+      "handler": "fpagos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

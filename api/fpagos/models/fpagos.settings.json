@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fpagos",
+  "info": {
+    "name": "fpagos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "estado": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "descripcionpago": {
+      "type": "string",
+      "required": true
+    },
+    "saldo": {
+      "model": "saldos",
+      "via": "fpagos"
+    },
+    "descuenta": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

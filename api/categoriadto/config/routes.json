@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/categoriadtos",
+      "handler": "categoriadto.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/categoriadtos/count",
+      "handler": "categoriadto.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/categoriadtos/:id",
+      "handler": "categoriadto.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/categoriadtos",
+      "handler": "categoriadto.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/categoriadtos/:id",
+      "handler": "categoriadto.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/categoriadtos/:id",
+      "handler": "categoriadto.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

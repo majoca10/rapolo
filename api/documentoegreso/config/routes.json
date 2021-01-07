@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/documentoegresos",
+      "handler": "documentoegreso.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/documentoegresos/count",
+      "handler": "documentoegreso.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/documentoegresos/:id",
+      "handler": "documentoegreso.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/documentoegresos",
+      "handler": "documentoegreso.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/documentoegresos/:id",
+      "handler": "documentoegreso.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/documentoegresos/:id",
+      "handler": "documentoegreso.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
