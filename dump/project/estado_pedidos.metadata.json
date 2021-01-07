@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"project.estado_pedidos"},{"v":{"$numberInt":"2"},"unique":true,"key":{"descripcion_estado":{"$numberInt":"1"}},"name":"descripcion_estado_1","ns":"project.estado_pedidos","background":true}],"uuid":"2d7fbdddc9e049eab467f4fd5042a4b3"}

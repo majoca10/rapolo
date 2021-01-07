@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"ControlIE.saldos"}],"uuid":"b38c0b347ff24c9a8f1cd70d2d565b4e"}

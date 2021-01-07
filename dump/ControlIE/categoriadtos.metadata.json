@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"ControlIE.categoriadtos"}],"uuid":"14e6e30adfb448b48f3463f48e20e27a"}

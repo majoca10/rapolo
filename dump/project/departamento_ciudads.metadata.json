@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"project.departamento_ciudads"}],"uuid":"3a2559bd1cb84f78adec7d5be2e86633"}

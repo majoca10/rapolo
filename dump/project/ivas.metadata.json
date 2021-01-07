@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"project.ivas"}],"uuid":"994dbb85e4a34d759ac0b3b8a4db2b95"}

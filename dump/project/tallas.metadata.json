@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"project.tallas"},{"v":{"$numberInt":"2"},"unique":true,"key":{"talla":{"$numberInt":"1"}},"name":"talla_1","ns":"project.tallas","background":true}],"uuid":"3b6a872b81d7488a8c28096b1787349d"}

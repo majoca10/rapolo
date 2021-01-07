@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"project.cuidados"}],"uuid":"0ecd618b51f24a7dac8bdfb00158a541"}
