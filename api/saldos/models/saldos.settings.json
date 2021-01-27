@@ -19,9 +19,9 @@
     "monto": {
       "type": "integer"
     },
-    "fpagos": {
-      "via": "saldo",
-      "collection": "fpagos"
+    "fpago": {
+      "model": "fpagos",
+      "via": "saldos"
     }
   }
 }

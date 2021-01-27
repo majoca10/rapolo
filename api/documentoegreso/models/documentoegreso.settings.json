@@ -68,6 +68,12 @@
     },
     "descuento": {
       "type": "json"
+    },
+    "egresodetalle": {
+      "type": "json"
+    },
+    "fechaFinalizado": {
+      "type": "datetime"
     }
   }
 }

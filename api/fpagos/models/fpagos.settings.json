@@ -18,13 +18,13 @@
       "type": "string",
       "required": true
     },
-    "saldo": {
-      "model": "saldos",
-      "via": "fpagos"
-    },
     "descuenta": {
       "type": "boolean",
       "default": false
+    },
+    "saldos": {
+      "via": "fpago",
+      "collection": "saldos"
     }
   }
 }
