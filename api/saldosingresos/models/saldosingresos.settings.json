@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "saldos",
+  "collectionName": "saldosingresos",
   "info": {
-    "name": "saldosEgresos"
+    "name": "saldosingresos"
   },
   "options": {
     "increments": true,
@@ -13,18 +13,16 @@
       "type": "datetime"
     },
     "periodo": {
-      "model": "periodo",
-      "via": "saldo"
+      "model": "periodo"
     },
     "monto": {
       "type": "integer"
     },
     "fpago": {
-      "model": "fpagos",
-      "via": "saldos"
+      "model": "fpagos"
     },
-    "documentoegreso": {
-      "model": "documentoegreso"
+    "documentosingreso": {
+      "model": "documentos"
     }
   }
 }

@@ -4,5 +4,22 @@
  * Read the documentation (https://strapi.io/documentation/v3.x/concepts/models.html#lifecycle-hooks)
  * to customize this model
  */
-
-module.exports = {};
+module.exports = {
+  lifecycles: {
+    async afterCreate(ingreso) {
+      if(ingreso.movimiento && ingreso.movimiento.length > 0){
+        for (let index = 0; index < ingreso.movimiento.length; index++) {
+            const pago  = ingreso.movimiento[index];
+            
+            let rs = await strapi.query('Saldosingresos').create({
+              documentosingreso : ingreso.id,
+              fecha : new Date(),
+              fpago : pago.fpago.id,
+              monto : pago.valor,
+              periodo: ingreso.periodo.id
+            });
+        }
+      }
+    }
+  },
+};

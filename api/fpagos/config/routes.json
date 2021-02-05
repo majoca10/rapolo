@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/fpagos/saldos",
+      "handler": "fpagos.saldos",
+      "config": {
+        "policies": ["global::Public"]
+      }
+    },
+    {
+      "method": "GET",
       "path": "/fpagos/:id",
       "handler": "fpagos.findOne",
       "config": {

@@ -51,7 +51,7 @@
       "collection": "documentos"
     },
     "saldo": {
-      "via": "periodos",
+      "via": "periodo",
       "model": "saldos"
     }
   }
