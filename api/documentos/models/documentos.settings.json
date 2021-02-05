@@ -68,6 +68,16 @@
     },
     "tercero": {
       "model": "tercero"
+    },
+    "dbanco": {
+      "type": "enumeration",
+      "enum": [
+        "TDebito",
+        "TCredito",
+        "Transf",
+        "Consign",
+        "Leasing"
+      ]
     }
   }
 }

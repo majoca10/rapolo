@@ -74,6 +74,16 @@
     },
     "fechaFinalizado": {
       "type": "datetime"
+    },
+    "dbanco": {
+      "type": "enumeration",
+      "enum": [
+        "TDebito",
+        "TCredito",
+        "Transf",
+        "Consign",
+        "Leasing"
+      ]
     }
   }
 }
