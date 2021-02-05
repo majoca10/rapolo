@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bdetalles",
+      "handler": "bdetalle.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bdetalles/count",
+      "handler": "bdetalle.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bdetalles/:id",
+      "handler": "bdetalle.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bdetalles",
+      "handler": "bdetalle.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bdetalles/:id",
+      "handler": "bdetalle.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bdetalles/:id",
+      "handler": "bdetalle.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

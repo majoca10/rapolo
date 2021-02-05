@@ -10,6 +10,9 @@ module.exports = {
         let ingresos = await strapi.query('Saldosingresos').find({});
         let egresos = await strapi.query('saldos').find({});
 
+        console.log("ingresos", ingresos)
+        console.log("egresos", egresos)
+
         let result_ingresos = _(ingresos).groupBy('fpago.descripcionpago').map((ingresos, key)=>{
             let sum = (collection)=>{
                 let total = 0;

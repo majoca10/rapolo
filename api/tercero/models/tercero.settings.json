@@ -30,6 +30,9 @@
     },
     "razonsocial": {
       "type": "string"
+    },
+    "categoriadto": {
+      "model": "categoriadto"
     }
   }
 }

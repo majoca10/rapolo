@@ -23,8 +23,8 @@
       "default": false
     },
     "saldos": {
-      "via": "fpago",
-      "collection": "saldos"
+      "collection": "saldos",
+      "via": "fpago"
     }
   }
 }
