@@ -50,9 +50,9 @@
       "via": "periodo",
       "collection": "documentos"
     },
-    "saldos": {
+    "saldo": {
       "via": "periodo",
-      "collection": "saldos"
+      "model": "saldos"
     }
   }
 }

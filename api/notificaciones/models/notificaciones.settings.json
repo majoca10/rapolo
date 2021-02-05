@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notificaciones",
+  "info": {
+    "name": "notificaciones"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "mensaje": {
+      "type": "text"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "fecha": {
+      "type": "datetime"
+    },
+    "leido": {
+      "type": "boolean"
+    },
+    "documentoegreso": {
+      "model": "documentoegreso"
+    }
+  }
+}

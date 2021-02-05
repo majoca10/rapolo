@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/saldosingresos",
+      "handler": "saldosingresos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saldosingresos/count",
+      "handler": "saldosingresos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saldosingresos/:id",
+      "handler": "saldosingresos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/saldosingresos",
+      "handler": "saldosingresos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/saldosingresos/:id",
+      "handler": "saldosingresos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/saldosingresos/:id",
+      "handler": "saldosingresos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
+    "debug": "node --inspect=0.0.0.0:9229 ./node_modules/strapi/bin/strapi develop",
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
@@ -11,6 +12,7 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "lodash": "^4.17.20",
     "mailgun-js": "^0.22.0",
     "moment": "^2.29.1",
     "s": "^1.0.0",

@@ -23,15 +23,9 @@ module.exports = {
    */
   '*/1 * * * *': async () =>{
     let rs = await strapi.api.documentoegreso.services.documentoegreso.find({ 'estadodocumento.descripcion':  'Pendiente'}, ['estadodocumento', 'tercero', 'user']);
-    console.log("resultado egresos pendientes", rs);
-
     if(rs && rs.length > 0){
         for (let index = 0; index < rs.length; index++) {
             const egreso = rs[index];
-
-            console.log(moment(egreso.fechafinal).format('YYYYMMDD'))
-            console.log("dia recordatorio",  moment(egreso.fechafinal).subtract(egreso.recordia, 'd').format('YYYYMMDD'));
-
             if(moment(egreso.fechafinal).subtract(egreso.recordia, 'd').format('YYYYMMMDD') == (moment().format('YYYYMMMDD'))){
                 console.log("enviando email...");
                 const data = {
