@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bdetalles",
+  "info": {
+    "name": "Bdetalle"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "details": {
+      "type": "enumeration",
+      "enum": [
+        "DEBITO",
+        "CREDITO",
+        "CHEKE",
+        "TRANSFERENCIA"
+      ]
+    }
+  }
+}

@@ -12,16 +12,16 @@
     "fecha": {
       "type": "datetime"
     },
-    "periodos": {
-      "collection": "periodo",
-      "via": "saldo"
+    "periodo": {
+      "model": "periodo",
+      "via": "saldos"
     },
     "monto": {
       "type": "integer"
     },
     "fpago": {
-      "model": "fpagos",
-      "via": "saldos"
+      "via": "saldos",
+      "model": "fpagos"
     }
   }
 }
