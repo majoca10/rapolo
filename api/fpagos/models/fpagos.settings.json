@@ -25,6 +25,9 @@
     "saldos": {
       "collection": "saldos",
       "via": "fpago"
+    },
+    "banco": {
+      "type": "boolean"
     }
   }
 }
