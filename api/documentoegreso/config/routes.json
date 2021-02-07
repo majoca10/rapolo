@@ -25,6 +25,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/documentoegresos/saldos/consolidado",
+      "handler": "documentoegreso.saldos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/documentoegresos",
       "handler": "documentoegreso.create",

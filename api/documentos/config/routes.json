@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/documentos/saldos/consolidado",
+      "handler": "documentos.saldos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/documentos/:id",
       "handler": "documentos.findOne",
       "config": {
