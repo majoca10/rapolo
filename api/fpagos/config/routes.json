@@ -26,6 +26,14 @@
     },
     {
       "method": "GET",
+      "path": "/fpagos/saldos-ingresos",
+      "handler": "fpagos.saldoIngresMensual",
+      "config": {
+        "policies": ["global::Public"]
+      }
+    },
+    {
+      "method": "GET",
       "path": "/fpagos/:id",
       "handler": "fpagos.findOne",
       "config": {

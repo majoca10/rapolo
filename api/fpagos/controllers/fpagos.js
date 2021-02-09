@@ -46,5 +46,20 @@ module.exports = {
             result_ingresos, 
             result_egresos
         }
+    },
+
+    async saldoIngresMensual(ctx) {
+        let ingresos = await strapi.query('Saldosingresos').find({});
+        let total = 0;
+
+        ingresos.map((i)=>{
+            if(i.movimiento){
+                i.movimiento.map((m)=>{
+                    total  = total + m.valor;
+                });
+            }
+        });
+
+        return total;
     }
   };
