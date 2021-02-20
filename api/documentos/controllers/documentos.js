@@ -11,9 +11,6 @@ module.exports = {
 
         for (let index = 0; index < ingresos.length; index++) {
             const ingreso = ingresos[index];
-
-            console.log("CURRENT");
-
             if(ingreso.movimiento && ingreso.movimiento.length > 0){
                 for (let index = 0; index < ingreso.movimiento.length; index++) {
                     const payment = ingreso.movimiento[index];
