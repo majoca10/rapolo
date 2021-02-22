@@ -6,7 +6,7 @@
  */
 module.exports = {
     async saldos(ctx) {
-        let ingresos = await strapi.query('documentos').find({});
+        let ingresos = await strapi.query('documentos').find({'estadodocumento.descripcion' : 'Finalizado'});
         let total = 0;
 
         for (let index = 0; index < ingresos.length; index++) {

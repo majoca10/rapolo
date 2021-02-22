@@ -7,7 +7,7 @@
 
 module.exports = {
     async saldos(ctx) {
-        let egresos = await strapi.query('Documentoegreso').find({});
+        let egresos = await strapi.query('Documentoegreso').find({'estadodocumento.descripcion' : 'Finalizado'});
         let total = 0;
         for (let index = 0; index < egresos.length; index++) {
             const egreso = egresos[index];
